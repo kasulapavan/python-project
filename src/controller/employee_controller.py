@@ -8,6 +8,7 @@ router = APIRouter(tags=["employee"])
 employee_service_instance = EmployeeServiceImpl()
 
 
+
 @router.post('/save-employee')
 async def saveEmployee(employee_details: EmployeeDetails):
     return employee_service_instance.save_employee(employee_details)

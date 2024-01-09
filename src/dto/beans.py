@@ -19,4 +19,6 @@ class EmployeeDetails(OurBaseModel):
 
 class DepartmentDetails(OurBaseModel):
     name: str = Field(min_length=1)
-
+class LoginDetails(OurBaseModel):
+    email: str = Field(min_length=1)
+    password: str = Field(min_length=1)
